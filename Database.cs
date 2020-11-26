@@ -15,7 +15,7 @@ namespace Database
         public void OpenDB()
         {
             string costring = null;
-            conn = new SqlConnection(connString);
+            conn = new SqlConnection(costring);
             if (conn.State == ConnectionState.Closed)
             {
                 conn.Open();
@@ -83,5 +83,4 @@ namespace Database
             Console.ReadKey();
         }
     }
-}
 }
