@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-E:\RFID\RFID\WpfApp1\WpfApp1\obj\Debug\
+E:\RFID\RFID\WpfApp1\WpfApp1\obj\Release\
 WpfApp1
 none
 false
-DEBUG;TRACE
+TRACE
 E:\RFID\RFID\WpfApp1\WpfApp1\App.xaml
 11151548125
 
