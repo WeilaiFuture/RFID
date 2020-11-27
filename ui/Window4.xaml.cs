@@ -23,5 +23,4 @@ namespace 消费中心
         {
             InitializeComponent();
         }
-    }
 }

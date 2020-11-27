@@ -77,6 +77,23 @@ namespace Database
             return n;
         }
 
+        public int SearchMoney(string sql,string m)
+        {
+            int n = 0;
+            int k = 0;
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataReader read = cmd.ExecuteReader();     //查询
+            n = int.Parse(m);
+            while (read.Read())
+            {
+                k = read.GetInt32(5);
+            }
+            if (n <= k)
+                return 1;
+            else
+                return 0;
+        }
+
         public void CloseDB()
         {
             if (conn.State == ConnectionState.Open)
