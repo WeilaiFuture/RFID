@@ -23,7 +23,9 @@ namespace WpfApp1
     public partial class MainWindow : Window
     {
         private SerialPort RFID=new SerialPort();
-      
+        /// <summary>
+        /// /////////////////
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
