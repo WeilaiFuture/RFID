@@ -64,7 +64,7 @@
         </GroupBox>
         <GroupBox Header="接收区设置" HorizontalAlignment="Left" Height="150" VerticalAlignment="Bottom" Width="183" Grid.Column="0" Margin="10,0,10,10" >
             <Grid >
-                <RadioButton GroupName="ready" Content="十六进制" IsChecked="True" Margin="10,20,10,10" />
+                <RadioButton Name="Show_A" GroupName="ready" Content="十六进制" IsChecked="True" Margin="10,20,10,10" />
                 <RadioButton GroupName="ready" Content="字符串" Margin="80,20,10,10" />
                 <CheckBox Name="Enter" Content="自动换行显示" IsChecked="False" Margin="10,40,10,10" ></CheckBox>
                 <CheckBox Name="Time" Content="显示时间" IsChecked="False" Margin="10,60,10,10" ></CheckBox>
