@@ -1,0 +1,17 @@
+﻿<Window x:Class="消费中心.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:消费中心"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="欢迎进入游乐园系统" HorizontalAlignment="Left" Height="58" Margin="228,68,0,0" VerticalAlignment="Top" Width="362" FontSize="36" RenderTransformOrigin="0.564,0.512"/>
+        <Label Content="账号" HorizontalAlignment="Left" Margin="120,182,0,0" VerticalAlignment="Top" Height="48" Width="88" FontSize="24"/>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="193,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452"/>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="193,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452"/>
+        <Label Content="密码" HorizontalAlignment="Left" Margin="120,228,0,0" VerticalAlignment="Top" Height="48" Width="88" FontSize="24"/>
+        <Button Content="登录" HorizontalAlignment="Left" Margin="556,300,0,0" VerticalAlignment="Top" Width="89" Height="45" Click="Button_Click" FontSize="18"/>
+    </Grid>
+</Window>
