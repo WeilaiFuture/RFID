@@ -28,7 +28,8 @@ namespace 消费中心
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Window1 a1=new Window1();
-            a1.ShowDialog();
+            a1.Show();
+            this.Visibility = System.Windows.Visibility.Hidden;
         }
     }
 }

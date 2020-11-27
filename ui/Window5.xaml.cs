@@ -24,9 +24,11 @@ namespace 消费中心
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("消费成功！");
+            textbox1.Text = null;
+            textbox2.Text = null;
         }
     }
 }

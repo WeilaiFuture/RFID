@@ -23,5 +23,11 @@ namespace 消费中心
         {
             InitializeComponent();
         }
+
+        private void textbox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            //string a = calendar1.SelectedDate.ToString();
+            //textbox1.Text = a;
+        }
     }
 }
