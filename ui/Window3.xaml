@@ -1,0 +1,14 @@
+﻿<Window x:Class="消费中心.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:消费中心"
+        mc:Ignorable="d"
+        Title="Window3" Height="450" Width="800">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="327" Margin="47,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="693"/>
+        <Label Content="读取信息" HorizontalAlignment="Left" Margin="45,15,0,0" VerticalAlignment="Top" Height="44" Width="94" RenderTransformOrigin="0.625,-1.85" FontSize="22"/>
+
+    </Grid>
+</Window>
