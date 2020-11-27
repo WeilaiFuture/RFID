@@ -23,9 +23,6 @@ namespace 消费中心
     public partial class Window6 : Window
     {
         private SerialPort RFID=new SerialPort();
-        /// <summary>
-        /// /////////////////
-        /// </summary>
         public Window6()
         {
             InitializeComponent();
