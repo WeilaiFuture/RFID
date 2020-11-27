@@ -76,21 +76,27 @@ namespace 消费中心
             string str1="";
             SerialPort sp = (SerialPort)sender;
             DateTime dt = DateTime.Now;
-            if(Time.IsChecked==true)
+            Dispatcher.BeginInvoke(new Action(delegate
             {
-                str1 += dt.ToString() + " ";
-            }
+                if (T.IsChecked==true)
+                {
+                    str1 += dt.ToString() + " ";
+                }
+            }));
             int buffersize = sp.BytesToRead;   //十六进制数的大小（假设为6byte）
             byte[] buffer = new byte[buffersize];   //创建缓冲区
             sp.Read(buffer, 0, buffersize);
-            if (Show_A.IsChecked == true)
+            Dispatcher.BeginInvoke(new Action(delegate
             {
-                str1 += byteToHexStr(buffer); //用到函数byteToHexStr
-            }
-            else
-            {
-                str1 += System.Text.Encoding.Default.GetString(buffer);
-            }
+                if (Show_A.IsChecked == true)
+                {
+                    str1 += byteToHexStr(buffer); //用到函数byteToHexStr
+                }
+                else
+                {
+                    str1 += System.Text.Encoding.Default.GetString(buffer);
+                }
+            }));
             string s = dt.ToString() + " "+ System.Text.Encoding.Default.GetString(buffer);
             StreamWriter sw = new StreamWriter("log", true, Encoding.GetEncoding("UTF-8"));
             sw.WriteLine(s);
@@ -99,7 +105,6 @@ namespace 消费中心
             {
                 RFIDTagInputBox.Text +=  str1 ;
             }));
-
         }
         private void SaveFile(object sender, EventArgs e)
         {

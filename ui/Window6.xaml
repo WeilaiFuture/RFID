@@ -67,7 +67,7 @@
                 <RadioButton Name="Show_A" GroupName="ready" Content="十六进制" IsChecked="True" Margin="10,20,10,10" />
                 <RadioButton GroupName="ready" Content="字符串" Margin="80,20,10,10" />
                 <CheckBox Name="Enter" Content="自动换行显示" IsChecked="False" Margin="10,40,10,10" ></CheckBox>
-                <CheckBox Name="Time" Content="显示时间" IsChecked="False" Margin="10,60,10,10" ></CheckBox>
+                <CheckBox Name="T" Content="显示时间" IsChecked="False" Margin="10,60,10,10" ></CheckBox>
                 <Button Name="Save_File" Content="保存至文件" Margin="10,80,10,10" Click="SaveFile"></Button>            
             </Grid>
         </GroupBox>
