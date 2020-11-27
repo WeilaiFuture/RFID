@@ -13,22 +13,22 @@
         </Grid.ColumnDefinitions>
         <GroupBox Header="串口设置" HorizontalAlignment="Left" Height="250" VerticalAlignment="Top" Width="183" Grid.Column="0" Margin="10,10,10,10" >
             <Grid >
-                <Button Content="打开串口" Click="RFIDReader_Load" Width="92" VerticalAlignment="Top" Margin="39.6,10,39.6,0" Height="32"/>
+                <Button Content="打开串口" Click="RFIDReader_Load" Width="92" VerticalAlignment="Top" Margin="39.6,10,39,0" Height="32"/>
                 <DockPanel Name="dockPanel1" Height="30" Margin="10,0,10.2,100">
                     <Label VerticalAlignment="Top">串口号：</Label>
                     <ComboBox Name="comboBox1">
-                        <ComboBoxItem IsSelected="True" >COM1</ComboBoxItem>
+                        <ComboBoxItem>COM1</ComboBoxItem>
                         <ComboBoxItem>COM2</ComboBoxItem>
                         <ComboBoxItem>COM3</ComboBoxItem>
                         <ComboBoxItem>COM4</ComboBoxItem>
-                        <ComboBoxItem>COM5</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True">COM5</ComboBoxItem>
                     </ComboBox>
                 </DockPanel>
                 <DockPanel Name="dockPanel2" Height="30" Margin="10,20,10.2,50">
                     <Label>波特率：</Label>
                     <ComboBox Name="comboBox2">
-                        <ComboBoxItem IsSelected="True" >4800</ComboBoxItem>
-                        <ComboBoxItem>9600</ComboBoxItem>
+                        <ComboBoxItem>4800</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True">9600</ComboBoxItem>
                         <ComboBoxItem>14400</ComboBoxItem>
                         <ComboBoxItem>19200</ComboBoxItem>
                     </ComboBox>
@@ -46,10 +46,10 @@
                 <DockPanel Name="dockPanel4" Height="30" Margin="10,60,10.2,-50">
                     <Label>数据位：</Label>
                     <ComboBox Name="comboBox4">
-                        <ComboBoxItem IsSelected="True" >5 bit</ComboBoxItem>
+                        <ComboBoxItem>5 bit</ComboBoxItem>
                         <ComboBoxItem>6 bit</ComboBoxItem>
                         <ComboBoxItem>7 bit</ComboBoxItem>
-                        <ComboBoxItem>8 bit</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True" >8 bit</ComboBoxItem>
                     </ComboBox>
                 </DockPanel>
                 <DockPanel Name="dockPanel5" Height="30" Margin="10,80,10.2,-100">
