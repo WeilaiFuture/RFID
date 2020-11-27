@@ -50,7 +50,7 @@ namespace 消费中心
                 //RFID.RtsEnable = true;
                 //RFID.Handshake = Handshake.None; 
                 RFID.Open();
-                // RFID.ReadTimeout = 200;
+                RFID.ReadTimeout = 200;
                 // string[] ports = SerialPort.GetPortNames();
                 RFID.DataReceived += new SerialDataReceivedEventHandler(RFID_DataReceivedHandler);
                 // RFID.Close();
