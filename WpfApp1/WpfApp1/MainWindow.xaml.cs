@@ -22,7 +22,7 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
-        private SerialPort RFID;
+        private SerialPort RFID=new SerialPort();
 
         public MainWindow()
         {
@@ -31,24 +31,26 @@ namespace WpfApp1
 
         private void RFIDReader_Load(object sender, EventArgs e)
         {
-
-            RFID = new SerialPort();
-            RFID.PortName = "COM5";
-            RFID.BaudRate = 9600;
-            RFID.DataBits = 8;
-            RFID.Parity = Parity.None;
-            RFID.StopBits = StopBits.One;
+            if(RFID.IsOpen())
+            {
+                RFID.Close();
+            }
+            else
+            {
+            RFID.PortName=comboBox1.Text;
+            RFID.BaudRate=int.Parse(comboBox2.Text);
+            RFID.DataBits=5+comboBox4.SelectedIndex;
+            RFID.Parity=(Parity)comboBox3.SelectedIndex;
+            RFID.StopBits=(StopBits)(comboBox5.SelectedIndex+1);
             RFID.Encoding = Encoding.BigEndianUnicode;
             //RFID.RtsEnable = true;
-
             //RFID.Handshake = Handshake.None; 
-
             RFID.Open();
             // RFID.ReadTimeout = 200;
-
-            string[] ports = SerialPort.GetPortNames();
+            // string[] ports = SerialPort.GetPortNames();
             RFID.DataReceived += new SerialDataReceivedEventHandler(RFID_DataReceivedHandler);
             // RFID.Close();
+            }
         }
         public static string byteToHexStr(byte[] bytes)
         {
@@ -83,6 +85,9 @@ namespace WpfApp1
                 //RFIDTagInputBox.Text = indata;
             }));
 
+        }
+        private void SaveFile(object sender, EventArgs e)
+        {
         }
 
     }
