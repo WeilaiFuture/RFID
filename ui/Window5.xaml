@@ -11,10 +11,8 @@
         <Label Content="消费金额" HorizontalAlignment="Left" Margin="91,182,0,0" VerticalAlignment="Top" Width="124" FontSize="28"/>
         <TextBox Name="textbox1" HorizontalAlignment="Left" Height="32" Margin="238,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="493"  SpellCheck.IsEnabled="True"/>
         <Label Content="卡号" HorizontalAlignment="Left" Margin="113,252,0,0" VerticalAlignment="Top" Width="124" FontSize="28"/>
-        <TextBox HorizontalAlignment="Left" Height="32" Margin="238,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="493"  SpellCheck.IsEnabled="True"/>
-        <Button HorizontalAlignment="Left" Margin="192,342,0,0" VerticalAlignment="Top" Width="76" Height="37" FontSize="26">
-            <Button Content="确认" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76" Height="37"  FontSize="26" Click="Button_Click"/>
-        </Button>
+        <TextBox Name="textbox2" HorizontalAlignment="Left" Height="32" Margin="238,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="493"  SpellCheck.IsEnabled="True"/>
+        <Button HorizontalAlignment="Left" Margin="192,342,0,0" VerticalAlignment="Top" Width="76" Height="37" FontSize="26" Content="确认" Click="Button_Click"/>
         <Button Content="取消" HorizontalAlignment="Left" Margin="519,344,0,0" VerticalAlignment="Top" Width="76" Height="37" FontSize="26"/>
 
     </Grid>

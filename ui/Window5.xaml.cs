@@ -46,12 +46,12 @@ namespace 消费中心
                 {
                     string sql1 = "select Money from User_table where Id=";
                     int m;
-                    m = p.SearchMoney(sql1,textbox1.Text);
+                    m = p.SearchMoney(sql1, textbox1.Text);
                     if (m == 1)
                     {
                         MessageBox.Show("消费成功", "提示", MessageBoxButton.OK, MessageBoxImage.Information);
                     }
-                    else 
+                    else
                     {
                         MessageBox.Show("消费失败，余额不足", "错误", MessageBoxButton.OK, MessageBoxImage.Error);
                     }

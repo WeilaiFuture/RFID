@@ -6,14 +6,15 @@
         xmlns:local="clr-namespace:消费中心"
         mc:Ignorable="d"
         Title="Window4" Height="450" Width="800">
-    <Grid>
-        <Label Content="预约时间" HorizontalAlignment="Left" Margin="89,174,0,0" VerticalAlignment="Top" Width="124" FontSize="28"/>
-        <Label Content="预约中心" HorizontalAlignment="Left" Margin="318,52,0,0" VerticalAlignment="Top" Width="276" FontSize="36"/>
-        <ComboBox HorizontalAlignment="Left" Margin="237,182,0,0" VerticalAlignment="Top" Width="493" Height="32"/>
-        <Label Content="姓名" HorizontalAlignment="Left" Margin="117,226,0,0" VerticalAlignment="Top" Width="124" FontSize="28"/>
-        <TextBox HorizontalAlignment="Left" Height="32" Margin="238,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="493"  SpellCheck.IsEnabled="True"/>
-        <Label Content="身份证号" HorizontalAlignment="Left" Margin="89,276,0,0" VerticalAlignment="Top" Width="124" FontSize="28"/>
-        <TextBox HorizontalAlignment="Left" Height="32" Margin="238,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="493"  SpellCheck.IsEnabled="True"/>
+    <Grid Margin="0,0,-0.4,1">
+        <Label Content="预约时间" HorizontalAlignment="Left" Margin="89,64,0,0" VerticalAlignment="Top" Width="124" FontSize="28"/>
+        <Label Content="预约中心" HorizontalAlignment="Left" Margin="318,10,0,0" VerticalAlignment="Top" Width="276" FontSize="36"/>
+        <Label Content="姓名" HorizontalAlignment="Left" Margin="117,250,0,0" VerticalAlignment="Top" Width="124" FontSize="28"/>
+        <TextBox Name="textbox1" HorizontalAlignment="Left" Height="32" Margin="238,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="493"  SpellCheck.IsEnabled="True" TextChanged="textbox1_TextChanged"/>
+        <Label Content="身份证号" HorizontalAlignment="Left" Margin="89,306,0,0" VerticalAlignment="Top" Width="124" FontSize="28"/>
+        <TextBox Name="textbox2" HorizontalAlignment="Left" Height="32" Margin="238,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="493"  SpellCheck.IsEnabled="True"/>
+        <DatePicker Name="Date" HorizontalAlignment="Left" Margin="238,71,0,0" VerticalAlignment="Top" Height="32" Width="493"/>
+        <Button Content="确认" HorizontalAlignment="Left" Margin="656,367,0,0" VerticalAlignment="Top" Width="75" Height="42" FontSize="22" Click="Button_Click"/>
 
     </Grid>
 </Window>

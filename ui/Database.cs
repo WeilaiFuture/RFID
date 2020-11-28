@@ -53,16 +53,11 @@ namespace Database
                 Console.WriteLine("添加失败");
         }
 
-        public void Search(string sql)
+        public SqlDataReader Search(string sql)
         {
             SqlCommand cmd = new SqlCommand(sql, conn);
             SqlDataReader read = cmd.ExecuteReader();     //查询
-            while (read.Read()) 
-            {
-                //示例：int number = Convert.ToInt32(read["列名1"]);          //查询列名1的数据,方法为: read(变量名)["列名"]; 该方法返回的是object类型
-                //string name = read["列名2"].ToString(); 
-                //Console.WriteLine("{0}\t{1}\t{2}\t\t{3}\t\t{4}", number, name, revise, Email, day);
-            }
+            return read;
         }
 
         public int Searchlogin(string sql)
