@@ -22,8 +22,10 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
-        private SerialPort RFID;
-
+        private SerialPort RFID=new SerialPort();
+        /// <summary>
+        /// /////////////////
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -31,24 +33,31 @@ namespace WpfApp1
 
         private void RFIDReader_Load(object sender, EventArgs e)
         {
-
-            RFID = new SerialPort();
-            RFID.PortName = "COM5";
-            RFID.BaudRate = 9600;
-            RFID.DataBits = 8;
-            RFID.Parity = Parity.None;
-            RFID.StopBits = StopBits.One;
-            RFID.Encoding = Encoding.BigEndianUnicode;
-            //RFID.RtsEnable = true;
-
-            //RFID.Handshake = Handshake.None; 
-
-            RFID.Open();
-            // RFID.ReadTimeout = 200;
-
-            string[] ports = SerialPort.GetPortNames();
-            RFID.DataReceived += new SerialDataReceivedEventHandler(RFID_DataReceivedHandler);
-            // RFID.Close();
+            if(RFID.IsOpen)
+            {
+                Button b=(Button)sender;
+                b.Content="打开串口";
+                RFID.Close();
+                
+            }
+            else
+            {
+                Button b=(Button)sender;
+                b.Content="关闭串口";
+                RFID.PortName=comboBox1.Text;
+                RFID.BaudRate=int.Parse(comboBox2.Text);
+                RFID.DataBits=5+comboBox4.SelectedIndex;
+                RFID.Parity=(Parity)comboBox3.SelectedIndex;
+                RFID.StopBits=(StopBits)(comboBox5.SelectedIndex+1);
+                RFID.Encoding = Encoding.BigEndianUnicode;
+                //RFID.RtsEnable = true;
+                //RFID.Handshake = Handshake.None; 
+                RFID.Open();
+                // RFID.ReadTimeout = 200;
+                // string[] ports = SerialPort.GetPortNames();
+                RFID.DataReceived += new SerialDataReceivedEventHandler(RFID_DataReceivedHandler);
+                // RFID.Close();
+            }
         }
         public static string byteToHexStr(byte[] bytes)
         {
@@ -83,6 +92,9 @@ namespace WpfApp1
                 //RFIDTagInputBox.Text = indata;
             }));
 
+        }
+        private void SaveFile(object sender, EventArgs e)
+        {
         }
 
     }

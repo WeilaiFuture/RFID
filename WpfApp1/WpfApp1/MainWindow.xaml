@@ -13,50 +13,51 @@
         </Grid.ColumnDefinitions>
         <GroupBox Header="串口设置" HorizontalAlignment="Left" Height="250" VerticalAlignment="Top" Width="183" Grid.Column="0" Margin="10,10,10,10" >
             <Grid >
-                <Button Content="打开串口" Click="RFIDReader_Load" Width="92" VerticalAlignment="Top" Margin="39.6,10,39.6,0" Height="32"/>
+                <Button Content="打开串口" Click="RFIDReader_Load" Width="92" VerticalAlignment="Top" Margin="39.6,10,39,0" Height="32"/>
                 <DockPanel Name="dockPanel1" Height="30" Margin="10,0,10.2,100">
                     <Label VerticalAlignment="Top">串口号：</Label>
                     <ComboBox Name="comboBox1">
-                        <ComboBoxItem IsSelected="True" >null</ComboBoxItem>
-                        <ComboBoxItem>null</ComboBoxItem>
-                        <ComboBoxItem>null</ComboBoxItem>
-                        <ComboBoxItem>null</ComboBoxItem>
+                        <ComboBoxItem>COM1</ComboBoxItem>
+                        <ComboBoxItem>COM2</ComboBoxItem>
+                        <ComboBoxItem>COM3</ComboBoxItem>
+                        <ComboBoxItem>COM4</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True">COM5</ComboBoxItem>
                     </ComboBox>
                 </DockPanel>
                 <DockPanel Name="dockPanel2" Height="30" Margin="10,20,10.2,50">
-                    <Label>串口号：</Label>
+                    <Label>波特率：</Label>
                     <ComboBox Name="comboBox2">
-                        <ComboBoxItem IsSelected="True" >null</ComboBoxItem>
-                        <ComboBoxItem>null</ComboBoxItem>
-                        <ComboBoxItem>null</ComboBoxItem>
-                        <ComboBoxItem>null</ComboBoxItem>
+                        <ComboBoxItem>4800</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True">9600</ComboBoxItem>
+                        <ComboBoxItem>14400</ComboBoxItem>
+                        <ComboBoxItem>19200</ComboBoxItem>
                     </ComboBox>
                 </DockPanel>
                 <DockPanel Name="dockPanel3" Height="30" Margin="10,40,10.2,0">
-                    <Label>串口号：</Label>
+                    <Label>校验位：</Label>
                     <ComboBox Name="comboBox3">
-                        <ComboBoxItem IsSelected="True" >null</ComboBoxItem>
-                        <ComboBoxItem>null</ComboBoxItem>
-                        <ComboBoxItem>null</ComboBoxItem>
-                        <ComboBoxItem>null</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True" >NONE</ComboBoxItem>
+                        <ComboBoxItem>ODD</ComboBoxItem>
+                        <ComboBoxItem>EVEN</ComboBoxItem>
+                        <ComboBoxItem>MARK</ComboBoxItem>
+                        <ComboBoxItem>SPACE</ComboBoxItem>
                     </ComboBox>
                 </DockPanel>
                 <DockPanel Name="dockPanel4" Height="30" Margin="10,60,10.2,-50">
-                    <Label>串口号：</Label>
+                    <Label>数据位：</Label>
                     <ComboBox Name="comboBox4">
-                        <ComboBoxItem IsSelected="True" >null</ComboBoxItem>
-                        <ComboBoxItem>null</ComboBoxItem>
-                        <ComboBoxItem>null</ComboBoxItem>
-                        <ComboBoxItem>null</ComboBoxItem>
+                        <ComboBoxItem>5 bit</ComboBoxItem>
+                        <ComboBoxItem>6 bit</ComboBoxItem>
+                        <ComboBoxItem>7 bit</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True" >8 bit</ComboBoxItem>
                     </ComboBox>
                 </DockPanel>
                 <DockPanel Name="dockPanel5" Height="30" Margin="10,80,10.2,-100">
-                    <Label>串口号：</Label>
+                    <Label>停止位：</Label>
                     <ComboBox Name="comboBox5">
-                        <ComboBoxItem IsSelected="True" >null</ComboBoxItem>
-                        <ComboBoxItem>null</ComboBoxItem>
-                        <ComboBoxItem>null</ComboBoxItem>
-                        <ComboBoxItem>null</ComboBoxItem>
+                        <ComboBoxItem IsSelected="True" >1 bit</ComboBoxItem>
+                        <ComboBoxItem >2 bit </ComboBoxItem>
+                        <ComboBoxItem >1.5 bit</ComboBoxItem>
                     </ComboBox>
                 </DockPanel>
             </Grid>
@@ -67,7 +68,7 @@
                 <RadioButton GroupName="ready" Content="字符串" Margin="80,20,10,10" />
                 <CheckBox Name="Enter" Content="自动换行显示" IsChecked="False" Margin="10,40,10,10" ></CheckBox>
                 <CheckBox Name="Time" Content="显示时间" IsChecked="False" Margin="10,60,10,10" ></CheckBox>
-                <Button Name="Save_File" Content="保存至文件" Margin="10,80,10,10"></Button>            
+                <Button Name="Save_File" Content="保存至文件" Margin="10,80,10,10" Click="SaveFile"></Button>            
             </Grid>
         </GroupBox>
         <GroupBox Header="接收区设置" Grid.Column="1" Margin="10,0,10,10" >
