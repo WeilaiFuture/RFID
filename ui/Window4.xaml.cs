@@ -11,10 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-<<<<<<< HEAD
-=======
 using Database;
->>>>>>> 123
 
 namespace 消费中心
 {
@@ -27,18 +24,16 @@ namespace 消费中心
         {
             InitializeComponent();
         }
-
-<<<<<<< HEAD
         private void textbox1_TextChanged(object sender, TextChangedEventArgs e)
         {
             //string a = calendar1.SelectedDate.ToString();
             //textbox1.Text = a;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            textbox1.Text = date1.SelectedDate.ToString();
-=======
+        //private void Button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    textbox1.Text = date1.SelectedDate.ToString();
+        //}
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Console.WriteLine(Date.SelectedDate);
@@ -69,7 +64,6 @@ namespace 消费中心
         private void textbox1_TextChanged(object sender, RoutedEventArgs e)
         {
 
->>>>>>> 123
         }
     }
 }

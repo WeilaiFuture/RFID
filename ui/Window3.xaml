@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="Window3" Height="450" Width="800">
     <Grid>
-<<<<<<< HEAD
         <TextBox HorizontalAlignment="Left" Height="327" Margin="47,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="693"/>
         <Label Content="出入信息" HorizontalAlignment="Left" Margin="53,12,0,0" VerticalAlignment="Top" Height="44" Width="94" RenderTransformOrigin="0.625,-1.85" FontSize="22"/>
         <Label Content="区域：" HorizontalAlignment="Left" Margin="467,12,0,0" VerticalAlignment="Top" Height="44" Width="94" RenderTransformOrigin="0.625,-1.85" FontSize="22"/>
@@ -21,10 +20,7 @@
             <ComboBoxItem>极速世界区域</ComboBoxItem>
         </ComboBox>
 
-=======
         <TextBox HorizontalAlignment="Left" Height="327" Margin="47,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="693" TextChanged="TextBox_TextChanged"/>
         <Label Content="读取信息" HorizontalAlignment="Left" Margin="45,15,0,0" VerticalAlignment="Top" Height="44" Width="94" RenderTransformOrigin="0.625,-1.85" FontSize="22"/>
->>>>>>> 123
-
     </Grid>
 </Window>

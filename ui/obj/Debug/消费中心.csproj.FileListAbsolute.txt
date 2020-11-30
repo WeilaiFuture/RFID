@@ -82,10 +82,7 @@ E:\RFID\RFID\ui\obj\Debug\Window2.g.cs
 E:\RFID\RFID\ui\obj\Debug\Window3.g.cs
 E:\RFID\RFID\ui\obj\Debug\Window4.g.cs
 E:\RFID\RFID\ui\obj\Debug\Window5.g.cs
-<<<<<<< HEAD
 E:\RFID\RFID\ui\obj\Debug\Window6.g.cs
-=======
->>>>>>> 123
 E:\RFID\RFID\ui\obj\Debug\App.g.cs
 E:\RFID\RFID\ui\obj\Debug\消费中心_MarkupCompile.cache
 E:\RFID\RFID\ui\obj\Debug\消费中心_MarkupCompile.lref
@@ -100,10 +97,7 @@ E:\RFID\RFID\ui\obj\Debug\Window2.baml
 E:\RFID\RFID\ui\obj\Debug\Window3.baml
 E:\RFID\RFID\ui\obj\Debug\Window4.baml
 E:\RFID\RFID\ui\obj\Debug\Window5.baml
-<<<<<<< HEAD
 E:\RFID\RFID\ui\obj\Debug\Window6.baml
-=======
->>>>>>> 123
 E:\RFID\RFID\ui\obj\Debug\消费中心.g.resources
 E:\RFID\RFID\ui\obj\Debug\消费中心.Properties.Resources.resources
 E:\RFID\RFID\ui\obj\Debug\消费中心.csproj.GenerateResource.cache

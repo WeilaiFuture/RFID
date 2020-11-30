@@ -11,12 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-<<<<<<< HEAD
-=======
 using Database;
 using System.Data;
 using System.Data.SqlClient;
->>>>>>> 123
 
 namespace 消费中心
 {
@@ -29,8 +26,6 @@ namespace 消费中心
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
-=======
         
         public void readId()
         {
@@ -69,6 +64,5 @@ namespace 消费中心
         {
 
         }
->>>>>>> 123
     }
 }

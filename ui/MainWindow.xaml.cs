@@ -12,12 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-<<<<<<< HEAD
 using System.Threading;
-=======
 using Database;
-
->>>>>>> 123
 namespace 消费中心
 {
     /// <summary>
@@ -27,19 +23,15 @@ namespace 消费中心
     {
         public MainWindow()
         {
-<<<<<<< HEAD
             Thread newWindowThread = new Thread(new ThreadStart(ThreadStartingPoint));
             newWindowThread.SetApartmentState(ApartmentState.STA);
             newWindowThread.IsBackground = true;
             newWindowThread.Start();
-=======
->>>>>>> 123
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-<<<<<<< HEAD
             Window1 a1=new Window1();
             this.Hide();
             a1.ShowDialog();
@@ -50,7 +42,6 @@ namespace 消费中心
             Window6 tempWindow = new Window6();
             tempWindow.Show();
             System.Windows.Threading.Dispatcher.Run();
-=======
             int n;
             if (textbox1.Text.Trim().Length == 0 || textbox2.Text.Trim().Length == 0)
             {
@@ -75,7 +66,6 @@ namespace 消费中心
                 }
                 p.CloseDB();
             }
->>>>>>> 123
         }
     }
 }

@@ -7,14 +7,11 @@
         mc:Ignorable="d"
         Title="Window2" Height="450" Width="800">
     <Grid>
-<<<<<<< HEAD
         <Label Content="进场信息" HorizontalAlignment="Left" Margin="45,15,0,0" VerticalAlignment="Top" Height="44" Width="94" RenderTransformOrigin="0.625,-1.85" FontSize="22"/>
         <TextBox HorizontalAlignment="Left" Height="327" Margin="45,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
         <Label Content="出场信息" HorizontalAlignment="Left" Margin="424,15,0,0" VerticalAlignment="Top" Height="44" Width="94" RenderTransformOrigin="0.625,-1.85" FontSize="22"/>
         <TextBox HorizontalAlignment="Left" Height="327" Margin="423,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
-=======
         <Label Content="读取信息" HorizontalAlignment="Left" Margin="45,15,0,0" VerticalAlignment="Top" Height="44" Width="94" RenderTransformOrigin="0.625,-1.85" FontSize="22"/>
         <TextBox HorizontalAlignment="Left" Height="327" Margin="45,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="704"/>
->>>>>>> 123
     </Grid>
 </Window>

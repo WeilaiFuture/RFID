@@ -11,10 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-<<<<<<< HEAD
-=======
 using Database;
->>>>>>> 123
+
 
 namespace 消费中心
 {
@@ -28,13 +26,12 @@ namespace 消费中心
             InitializeComponent();
         }
 
-<<<<<<< HEAD
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("消费成功！");
             textbox1.Text = null;
             textbox2.Text = null;
-=======
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             int n;
@@ -68,7 +65,6 @@ namespace 消费中心
                 }
                 p.CloseDB();
             }
->>>>>>> 123
         }
     }
 }
