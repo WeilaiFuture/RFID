@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Threading;
+using DataBase;
+
 namespace 消费中心
 {
     /// <summary>
@@ -28,13 +30,33 @@ namespace 消费中心
             newWindowThread.Start();
             InitializeComponent();
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Window1 a1=new Window1();
-            this.Hide();
-            a1.ShowDialog();
-            this.Close();
+            int n;
+            if (textbox1.Text.Trim().Length == 0 || textbox2.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("账号或密码不能为空", "警告", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+                string sql = "select* from User_table where Id=" + textbox1.Text + " and Password='" + textbox2.Text + "'";
+                Program p = new Program();
+                p.OpenDB();
+                n = p.Searchlogin(sql);
+                //if (n == 0)
+               // {
+                //    MessageBox.Show("登录失败，用户不存在", "错误", MessageBoxButton.OK, MessageBoxImage.Error);
+                //}
+               // else
+                //{
+                    MessageBox.Show("登录成功", "提示", MessageBoxButton.OK, MessageBoxImage.Information);
+                    Window1 a1 = new Window1();
+                    this.Hide();
+                    a1.ShowDialog();
+                    this.Close();
+                //}
+                p.CloseDB();
+            }
         }
         private void ThreadStartingPoint()
         {

@@ -6,9 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Database
+namespace DataBase
 {
-
     class Program
     {
         SqlConnection conn = null;
