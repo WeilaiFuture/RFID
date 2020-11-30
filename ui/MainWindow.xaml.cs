@@ -33,9 +33,7 @@ namespace 消费中心
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Window1 a1=new Window1();
-            this.Hide();
             a1.ShowDialog();
-            this.Close();
         }
         private void ThreadStartingPoint()
         {

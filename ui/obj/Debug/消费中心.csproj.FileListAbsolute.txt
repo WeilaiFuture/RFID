@@ -73,6 +73,7 @@ F:\My FILS\大三\RFID\RFID\ui\obj\Debug\消费中心.csproj.GenerateResource.ca
 F:\My FILS\大三\RFID\RFID\ui\obj\Debug\消费中心.csproj.CoreCompileInputs.cache
 F:\My FILS\大三\RFID\RFID\ui\obj\Debug\消费中心.exe
 F:\My FILS\大三\RFID\RFID\ui\obj\Debug\消费中心.pdb
+<<<<<<< HEAD
 =======
 >>>>>>> 123
 E:\RFID\RFID\ui\obj\Debug\消费中心.csprojAssemblyReference.cache
@@ -102,3 +103,5 @@ E:\RFID\RFID\ui\obj\Debug\消费中心.g.resources
 E:\RFID\RFID\ui\obj\Debug\消费中心.Properties.Resources.resources
 E:\RFID\RFID\ui\obj\Debug\消费中心.csproj.GenerateResource.cache
 E:\RFID\RFID\ui\obj\Debug\消费中心.csproj.CoreCompileInputs.cache
+=======
+>>>>>>> parent of 3de25b6... 魏来
