@@ -27,7 +27,7 @@ namespace 消费中心
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine(Date.SelectedDate);
+            Console.WriteLine(date1.SelectedDate);
             if (textbox1.Text.Trim().Length == 0)
             {
                 MessageBox.Show("预约日期或姓名或身份证号不能为空", "警告", MessageBoxButton.OK, MessageBoxImage.Error);
