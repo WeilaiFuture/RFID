@@ -40,29 +40,17 @@ namespace 消费中心
                 //string name = read["列名2"].ToString();
                 //Console.WriteLine("{0}\t{1}\t{2}\t\t{3}\t\t{4}", number, name, revise, Email, day);
             }
-            //显示至窗口
-            //能够选择进场闸机或出场闸机
-            //无权限的红色高亮
-            //进场修改
-            string sql1 = "update User_table set Flag=1 where Id=";//+kahao
-            p.Change(sql1);
-            //离场修改
-            string sql2 = "update User_table set Flag=0 where Id=";//+kahao
-            p.Change(sql2);
-            //if (p)
-            //{
-                MessageBox.Show("该游客已经入场", "错误", MessageBoxButton.OK, MessageBoxImage.Error);
-            //}
-            //else
-            //{
-                MessageBox.Show("该游客已经离场", "错误", MessageBoxButton.OK, MessageBoxImage.Error);
-            //}
             p.CloseDB();
+            //显示至窗口
+            //能够选择区域
+            //无权限的红色高亮
+            MessageBox.Show("该游客没有进入该区域的权限", "错误", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
+
     }
 }
