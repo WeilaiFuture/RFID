@@ -47,7 +47,6 @@ F:\Mycode\C#\ui\obj\Debug\消费中心.csproj.GenerateResource.cache
 F:\Mycode\C#\ui\obj\Debug\消费中心.csproj.CoreCompileInputs.cache
 F:\Mycode\C#\ui\obj\Debug\消费中心.exe
 F:\Mycode\C#\ui\obj\Debug\消费中心.pdb
-<<<<<<< HEAD
 F:\My FILS\大三\RFID\RFID\ui\bin\Debug\消费中心.exe.config
 F:\My FILS\大三\RFID\RFID\ui\bin\Debug\消费中心.exe
 F:\My FILS\大三\RFID\RFID\ui\bin\Debug\消费中心.pdb
@@ -73,9 +72,6 @@ F:\My FILS\大三\RFID\RFID\ui\obj\Debug\消费中心.csproj.GenerateResource.ca
 F:\My FILS\大三\RFID\RFID\ui\obj\Debug\消费中心.csproj.CoreCompileInputs.cache
 F:\My FILS\大三\RFID\RFID\ui\obj\Debug\消费中心.exe
 F:\My FILS\大三\RFID\RFID\ui\obj\Debug\消费中心.pdb
-<<<<<<< HEAD
-=======
->>>>>>> 123
 E:\RFID\RFID\ui\obj\Debug\消费中心.csprojAssemblyReference.cache
 E:\RFID\RFID\ui\obj\Debug\MainWindow.g.cs
 E:\RFID\RFID\ui\obj\Debug\Window1.g.cs
@@ -103,5 +99,3 @@ E:\RFID\RFID\ui\obj\Debug\消费中心.g.resources
 E:\RFID\RFID\ui\obj\Debug\消费中心.Properties.Resources.resources
 E:\RFID\RFID\ui\obj\Debug\消费中心.csproj.GenerateResource.cache
 E:\RFID\RFID\ui\obj\Debug\消费中心.csproj.CoreCompileInputs.cache
-=======
->>>>>>> parent of 3de25b6... 魏来

@@ -27,47 +27,33 @@ namespace 消费中心
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Window2 a2 = new Window2();
-<<<<<<< HEAD
             this.Hide();
             a2.ShowDialog();
-
-=======
-            a2.Show();
->>>>>>> parent of 3de25b6... 魏来
+            this.Show();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Window3 a3 = new Window3();
-<<<<<<< HEAD
             this.Hide();
             a3.ShowDialog();
-=======
-            a3.Show();
->>>>>>> parent of 3de25b6... 魏来
+            this.Show();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             Window4 a4 = new Window4();
-<<<<<<< HEAD
             this.Hide();
             a4.ShowDialog();
-
-=======
-            a4.Show();
->>>>>>> parent of 3de25b6... 魏来
+            this.Show();
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             Window5 a5 = new Window5();
-<<<<<<< HEAD
             this.Hide();
             a5.ShowDialog();
-=======
-            a5.Show();
->>>>>>> parent of 3de25b6... 魏来
+            this.Show();
         }
     }
 }
