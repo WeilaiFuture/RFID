@@ -7,8 +7,19 @@
         mc:Ignorable="d"
         Title="Window3" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="327" Margin="47,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="693"/>
-        <Label Content="读取信息" HorizontalAlignment="Left" Margin="45,15,0,0" VerticalAlignment="Top" Height="44" Width="94" RenderTransformOrigin="0.625,-1.85" FontSize="22"/>
+        <TextBox HorizontalAlignment="Left" Height="327" Margin="47,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="693"/>
+        <Label Content="出入信息" HorizontalAlignment="Left" Margin="53,12,0,0" VerticalAlignment="Top" Height="44" Width="94" RenderTransformOrigin="0.625,-1.85" FontSize="22"/>
+        <Label Content="区域：" HorizontalAlignment="Left" Margin="467,12,0,0" VerticalAlignment="Top" Height="44" Width="94" RenderTransformOrigin="0.625,-1.85" FontSize="22"/>
+        <ComboBox Name="a" Margin="538,21,53.6,370">
+            <ComboBoxItem>欢乐海洋区域</ComboBoxItem>
+            <ComboBoxItem>欢乐时光区域</ComboBoxItem>
+            <ComboBoxItem>飓风湾区域</ComboBoxItem>
+            <ComboBoxItem>渔光岛区域</ComboBoxItem>
+            <ComboBoxItem>欢乐江城区域</ComboBoxItem>
+            <ComboBoxItem>羽落天堂区域</ComboBoxItem>
+            <ComboBoxItem>极速世界区域</ComboBoxItem>
+        </ComboBox>
+
 
     </Grid>
 </Window>
