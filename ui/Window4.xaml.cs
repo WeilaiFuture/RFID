@@ -52,5 +52,9 @@ namespace 消费中心
                 p.CloseDB();
             }
         }
+        private void textbox1_TextChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
