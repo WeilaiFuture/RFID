@@ -37,7 +37,10 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+<<<<<<< HEAD
     <Reference Include="System.Windows.Forms" />
+=======
+>>>>>>> 123
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -56,6 +59,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+<<<<<<< HEAD
+=======
+    <Compile Include="Database.cs" />
+>>>>>>> 123
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
@@ -71,9 +78,12 @@
     <Compile Include="Window5.xaml.cs">
       <DependentUpon>Window5.xaml</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Window6.xaml.cs">
       <DependentUpon>Window6.xaml</DependentUpon>
     </Compile>
+=======
+>>>>>>> 123
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -106,10 +116,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+<<<<<<< HEAD
     <Page Include="Window6.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+=======
+>>>>>>> 123
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

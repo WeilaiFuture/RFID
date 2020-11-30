@@ -11,6 +11,10 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+<<<<<<< HEAD
+=======
+using Database;
+>>>>>>> 123
 
 namespace 消费中心
 {
@@ -24,11 +28,47 @@ namespace 消费中心
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("消费成功！");
             textbox1.Text = null;
             textbox2.Text = null;
+=======
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int n;
+            if (textbox1.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("消费金额不能为空", "警告", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+                string sql = "select* from User_table where Id=";
+                Program p = new Program();
+                p.OpenDB();
+                n = p.Searchlogin(sql);
+                if (n == 0)
+                {
+                    MessageBox.Show("消费失败，用户不存在", "错误", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                else
+                {
+                    string sql1 = "select Money from User_table where Id=";
+                    int m;
+                    m = p.SearchMoney(sql1, textbox1.Text);
+                    if (m == 1)
+                    {
+                        MessageBox.Show("消费成功", "提示", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("消费失败，余额不足", "错误", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                }
+                p.CloseDB();
+            }
+>>>>>>> 123
         }
     }
 }
