@@ -29,5 +29,10 @@ namespace 消费中心
             //string a = calendar1.SelectedDate.ToString();
             //textbox1.Text = a;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            textbox1.Text = date1.SelectedDate.ToString();
+        }
     }
 }

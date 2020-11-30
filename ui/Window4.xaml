@@ -13,8 +13,8 @@
         <TextBox Name="textbox1" HorizontalAlignment="Left" Height="32" Margin="238,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="493"  SpellCheck.IsEnabled="True" TextChanged="textbox1_TextChanged"/>
         <Label Content="身份证号" HorizontalAlignment="Left" Margin="89,306,0,0" VerticalAlignment="Top" Width="124" FontSize="28"/>
         <TextBox HorizontalAlignment="Left" Height="32" Margin="238,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="493"  SpellCheck.IsEnabled="True"/>
-        <DatePicker HorizontalAlignment="Left" Margin="238,71,0,0" VerticalAlignment="Top" Height="32" Width="493"/>
-        <Button Content="确认" HorizontalAlignment="Left" Margin="656,367,0,0" VerticalAlignment="Top" Width="75" Height="42" FontSize="22"/>
+        <DatePicker Name="date1" HorizontalAlignment="Left" Margin="238,71,0,0" VerticalAlignment="Top" Height="32" Width="493"/>
+        <Button Content="确认" HorizontalAlignment="Left" Margin="656,367,0,0" VerticalAlignment="Top" Width="75" Height="42" FontSize="22" Click="Button_Click"/>
 
     </Grid>
 </Window>
