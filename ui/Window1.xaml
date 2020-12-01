@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:消费中心"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
+        Title="主界面" Height="450" Width="800">
     <Grid>
         <Label Content="请选择需要进行的操作" HorizontalAlignment="Left" Margin="218,88,0,0" VerticalAlignment="Top" Width="422" FontSize="36"/>
         <Button Content="进出场模块" HorizontalAlignment="Left" Margin="77,256,0,0" VerticalAlignment="Top" Width="130" Height="60" IsCancel="True" FontSize="18" Click="Button_Click_1"/>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:消费中心"
         mc:Ignorable="d"
-        Title="Window4" Height="450" Width="800">
+        Title="预约模块" Height="450" Width="800">
     <Grid Margin="0,0,-0.4,1">
         <Label Content="预约时间" HorizontalAlignment="Left" Margin="89,64,0,0" VerticalAlignment="Top" Width="124" FontSize="28"/>
         <Label Content="预约中心" HorizontalAlignment="Left" Margin="318,10,0,0" VerticalAlignment="Top" Width="276" FontSize="36"/>

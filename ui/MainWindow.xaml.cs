@@ -43,18 +43,18 @@ namespace 消费中心
                 Program p = new Program();
                 p.OpenDB();
                 n = p.Searchlogin(sql);
-                //if (n == 0)
-               // {
-                //    MessageBox.Show("登录失败，用户不存在", "错误", MessageBoxButton.OK, MessageBoxImage.Error);
-                //}
-               // else
-                //{
+                if (n == 0)
+                {
+                    MessageBox.Show("登录失败，用户不存在", "错误", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                else
+                {
                     MessageBox.Show("登录成功", "提示", MessageBoxButton.OK, MessageBoxImage.Information);
                     Window1 a1 = new Window1();
                     this.Hide();
                     a1.ShowDialog();
                     this.Close();
-                //}
+                }
                 p.CloseDB();
             }
         }

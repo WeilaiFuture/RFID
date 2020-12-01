@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:消费中心"
         mc:Ignorable="d"
-        Title="Window5" Height="450" Width="800">
+        Title="消费模块" Height="450" Width="800">
     <Grid>
         <Label Content="消费中心" HorizontalAlignment="Left" Margin="318,52,0,0" VerticalAlignment="Top" Width="276" FontSize="36"/>
         <Label Content="消费金额" HorizontalAlignment="Left" Margin="91,182,0,0" VerticalAlignment="Top" Width="124" FontSize="28"/>
