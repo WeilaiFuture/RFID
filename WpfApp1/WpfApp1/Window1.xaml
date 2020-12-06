@@ -1,0 +1,49 @@
+﻿<Window x:Class="WpfApp1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="游乐场管理系统" Height="450" Width="800">
+
+    <DockPanel>
+        <Grid DockPanel.Dock="Top" Background="White" Margin="0,0,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Button Content="注册用户" Grid.Column="0" HorizontalAlignment="Right" Width="80" BorderThickness="0" Background="White" Margin="0,0,0.6,0.6" Height="25" VerticalAlignment="Bottom" Click="Regist"/>
+            <Button Content="删除用户" Grid.Column="1" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="80" Height="25" BorderThickness="0" Background="White" Click="Del"/>
+            <Button Content="账户充值" Grid.Column="2" HorizontalAlignment="Left" Width="80" BorderThickness="0" Background="White" Margin="0.4,0,0,0.6" Click="Recharge"/>
+            <Button Content="用户查找" Grid.Column="3" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="80" Height="25" BorderThickness="0" Background="White" Click="Find"/>
+            <Label Content="金额：" Grid.Column="5"></Label> 
+            <TextBox Name="Text1" Grid.Column="6"  VerticalAlignment="Center" Width="50"  Height="25"/>
+            <Label Content="请输入账号：" Grid.Column="7"></Label>
+            <TextBox Name="Text2" Grid.Column="8"  VerticalAlignment="Center" Width="200"  Height="25"/>
+        </Grid>
+        <ListView Name="listView" ScrollViewer.VerticalScrollBarVisibility="Visible" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="   卡号   " DisplayMemberBinding="{Binding Id}" Width="100"/>
+                    <GridViewColumn Header="  姓名  " DisplayMemberBinding="{Binding Name}"  Width="auto"/>
+                    <GridViewColumn Header="        密码      "  DisplayMemberBinding="{Binding Password}" Width="auto"/>
+                    <GridViewColumn Header="  入园  "  DisplayMemberBinding="{Binding Flag}" Width="auto"/>
+                    <GridViewColumn Header="性别"  DisplayMemberBinding="{Binding Sex}"  Width="auto"/>
+                    <GridViewColumn Header="  权限  " DisplayMemberBinding="{Binding Role}"  Width="auto"/>
+                    <GridViewColumn Header="  余额  "  DisplayMemberBinding="{Binding Money}" Width="auto"/>
+                    <GridViewColumn Header="            身份证号码        "  DisplayMemberBinding="{Binding Idnumber}" Width="auto"/>
+                    <GridViewColumn Header="Card"  DisplayMemberBinding="{Binding Card}" Width="100"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </DockPanel>
+</Window>

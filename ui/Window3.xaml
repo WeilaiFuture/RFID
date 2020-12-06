@@ -7,19 +7,20 @@
         mc:Ignorable="d"
         Title="门禁模块" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="327" Margin="47,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="693"/>
+        <TextBox Name="text" HorizontalAlignment="Left" VerticalScrollBarVisibility="Visible" Height="327" Margin="47,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="693" />
         
         <Label Content="出入信息" HorizontalAlignment="Left" Margin="53,12,0,0" VerticalAlignment="Top" Height="44" Width="100" RenderTransformOrigin="0.625,-1.85" FontSize="22"/>
         <Label Content="区域：" HorizontalAlignment="Left" Margin="467,12,0,0" VerticalAlignment="Top" Height="44" Width="94" RenderTransformOrigin="0.625,-1.85" FontSize="22"/>
-        <ComboBox Name="a" Margin="538,21,53.6,370">
-            <ComboBoxItem>欢乐海洋区域</ComboBoxItem>
-            <ComboBoxItem>欢乐时光区域</ComboBoxItem>
-            <ComboBoxItem>飓风湾区域</ComboBoxItem>
-            <ComboBoxItem>渔光岛区域</ComboBoxItem>
-            <ComboBoxItem>欢乐江城区域</ComboBoxItem>
-            <ComboBoxItem>羽落天堂区域</ComboBoxItem>
-            <ComboBoxItem>极速世界区域</ComboBoxItem>
+        <ComboBox Name="com" Margin="538,21,53.6,370">
+            <ComboBoxItem IsSelected="True">欢乐海洋</ComboBoxItem>
+            <ComboBoxItem>欢乐时光</ComboBoxItem>
+            <ComboBoxItem>飓风湾</ComboBoxItem>
+            <ComboBoxItem>渔光岛</ComboBoxItem>
+            <ComboBoxItem>欢乐江城</ComboBoxItem>
+            <ComboBoxItem>羽落天堂</ComboBoxItem>
+            <ComboBoxItem>极速世界</ComboBoxItem>
         </ComboBox>
+        <Button Content="查看所有信息" HorizontalAlignment="Left" Margin="270,17,0,0" VerticalAlignment="Top" Width="91" Height="35" Click="Button_Click"/>
 
     </Grid>
 </Window>

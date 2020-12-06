@@ -1,0 +1,20 @@
+﻿<Window x:Class="消费中心.Window7"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:消费中心"
+        mc:Ignorable="d"
+        Title="出入信息" Height="450" Width="500">
+    <Grid>
+        <ListView Name="listView" AllowDrop="True" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Visible">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="   卡号   " DisplayMemberBinding="{Binding Id}" Width="150"/>
+                    <GridViewColumn Header="  地点  " DisplayMemberBinding="{Binding AreaName}"  Width="150"/>
+                    <GridViewColumn Header="        时间      "  DisplayMemberBinding="{Binding Date}" Width="150"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

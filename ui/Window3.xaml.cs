@@ -26,30 +26,35 @@ namespace 消费中心
             InitializeComponent();
         }
 
-        public void readId()
+        public void test(User u, string s)
         {
-            string sql = "select * from User_table where Id=";//kahao
-            Program p = new Program();
-            p.OpenDB();
-            SqlDataReader read = p.Search(sql);
-            while (read.Read())
+            this.Dispatcher.Invoke(new Action(() =>
             {
-                //向窗口输出用户信息
-                //示例：int number = Convert.ToInt32(read["列名1"]);          //查询列名1的数据,方法为: read(变量名)["列名"]; 该方法返回的是object类型
-                //string name = read["列名2"].ToString();
-                //Console.WriteLine("{0}\t{1}\t{2}\t\t{3}\t\t{4}", number, name, revise, Email, day);
-            }
-            p.CloseDB();
-            //显示至窗口
-            //能够选择区域
-            //无权限的红色高亮
-            MessageBox.Show("该游客没有进入该区域的权限", "错误", MessageBoxButton.OK, MessageBoxImage.Error);
+                Program p = new Program();
+                string sql = "select* from Area_divide_table where Areaname='" + com.Text + "'";
+                p.OpenDB();
+                Area_d a = p.SearchArea_d(sql);
+                p.CloseDB();
+                if (u.Role.Equals(a.Role))
+                {
+                    sql = "INSERT INTO Area_statistic_table VALUES ('" + com.Text + "','" + u.Id + "','"+ DateTime.Now.ToString("yyyy-MM-dd")+"-" + DateTime.Now.ToLongTimeString().ToString() + "')";
+                    text.Text += s;
+                    p.OpenDB();
+                    p.Insert(sql);
+                    p.CloseDB();
+
+                }
+                else
+                    MessageBox.Show("权限不够");
+            }));
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            Window7 w = new Window7();
+            this.Hide();
+            w.ShowDialog();
+            this.ShowDialog();
         }
-
     }
 }

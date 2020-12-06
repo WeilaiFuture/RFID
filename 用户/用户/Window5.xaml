@@ -1,0 +1,19 @@
+﻿<Window x:Class="用户.Window5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:用户"
+        mc:Ignorable="d"
+        Title="Window5" Height="450" Width="800">
+    <Grid Margin="0,0,-0.4,1">
+        <Label Content="预约时间" HorizontalAlignment="Left" Margin="89,64,0,0" VerticalAlignment="Top" Width="124" FontSize="28"/>
+        <Label Content="预约中心" HorizontalAlignment="Left" Margin="318,10,0,0" VerticalAlignment="Top" Width="276" FontSize="36"/>
+        <Label Content="姓名" HorizontalAlignment="Left" Margin="117,250,0,0" VerticalAlignment="Top" Width="124" FontSize="28"/>
+        <TextBox Name="textbox1" HorizontalAlignment="Left" Height="32" Margin="238,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="493"  SpellCheck.IsEnabled="True"/>
+        <Label Content="身份证号" HorizontalAlignment="Left" Margin="89,306,0,0" VerticalAlignment="Top" Width="124" FontSize="28"/>
+        <TextBox Name="textbox2" HorizontalAlignment="Left" Height="32" Margin="238,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="493"  SpellCheck.IsEnabled="True"/>
+        <DatePicker Name="date1" HorizontalAlignment="Left" Margin="238,71,0,0" VerticalAlignment="Top" Height="32" Width="493"/>
+        <Button Content="确认" HorizontalAlignment="Left" Margin="656,367,0,0" VerticalAlignment="Top" Width="75" Height="42" FontSize="22" Click="Button_Click"/>
+    </Grid>
+</Window>

@@ -23,38 +23,39 @@ namespace 消费中心
         public Window4()
         {
             InitializeComponent();
+            initList();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private string sql = "select* from Order_table";
+        private void initList()
         {
-            Console.WriteLine(date1.SelectedDate);
-            if (textbox1.Text.Trim().Length == 0)
+            Program p = new Program();
+            p.OpenDB();
+            List<Order> U = p.SearchOrder(sql);
+            p.CloseDB();
+            listView.ItemsSource = U;
+
+        }
+        private void Find(object sender, RoutedEventArgs e)
+        {
+            if (Text2.Text == string.Empty)
             {
-                MessageBox.Show("预约日期或姓名或身份证号不能为空", "警告", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBoxResult result = MessageBox.Show("账号栏无账号是否查询所有用户", "提示", MessageBoxButton.OKCancel, MessageBoxImage.Question);
+                if (result == MessageBoxResult.OK)
+                {
+                    sql = "select* from Order_table";
+                    initList();
+                }
             }
             else
             {
-                int n = 0;
-                string sql = "select * from Order_table where Id=";//+and Orderdate='" + Date.SelectedDate + "'";//kahao
-                Program p = new Program();
-                p.OpenDB();
-                n = p.Searchlogin(sql);
-                if (n == 0)
-                {
-                    MessageBox.Show("预约失败，您在当天已有预约", "错误", MessageBoxButton.OK, MessageBoxImage.Error);
-                }
-                else
-                {
-                    string sql1 = "insert into Order_table(Id Orderdate Name Idnumber) values(";
-                    p.Insert(sql1);
-                    MessageBox.Show("预约成功", "提示", MessageBoxButton.OK, MessageBoxImage.Information);
-                }
-                p.CloseDB();
+                List_clear();
+                sql = "select* from Order_table where Id='" + Text2.Text + "'";
+                initList();
             }
         }
-        private void textbox1_TextChanged(object sender, RoutedEventArgs e)
+        private void List_clear()
         {
-
+            listView.ItemsSource = null;
         }
     }
 }

@@ -1,0 +1,20 @@
+﻿<Window x:Class="用户.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:用户"
+        mc:Ignorable="d"
+              Title="主界面" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="请选择需要进行的操作" HorizontalAlignment="Left" Margin="218,88,0,0" VerticalAlignment="Top" Width="422" FontSize="36"/>
+        <Button Content="用户模块" HorizontalAlignment="Left" Margin="169,256,0,0" VerticalAlignment="Top" Width="130" Height="60" IsCancel="True" FontSize="18" Click="Button_Click" />
+        <Button Content="预约模块" HorizontalAlignment="Left" Margin="336,256,0,0" VerticalAlignment="Top" Width="130" Height="60" IsCancel="True" FontSize="18" Click="Button_Click_1"/>
+        <Button Content="消费模块" HorizontalAlignment="Left" Margin="510,256,0,0" VerticalAlignment="Top" Width="130" Height="60" IsCancel="True" FontSize="18" IsDefault="True" Click="Button_Click_2" />
+        <Button Content="退出登录" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Width="60" Height="30" FontSize="10"  Click="Button_Click_3" Grid.ColumnSpan="2" Margin="0,0,-0.4,0"/>
+    </Grid>
+</Window>
