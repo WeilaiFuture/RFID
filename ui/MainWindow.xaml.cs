@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Threading;
+using DataBase;
 namespace 消费中心
 {
     /// <summary>
@@ -22,25 +23,121 @@ namespace 消费中心
     {
         public MainWindow()
         {
-            Thread newWindowThread = new Thread(new ThreadStart(ThreadStartingPoint));
-            newWindowThread.SetApartmentState(ApartmentState.STA);
-            newWindowThread.IsBackground = true;
-            newWindowThread.Start();
             InitializeComponent();
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Window1 a1=new Window1();
-            this.Hide();
-            a1.ShowDialog();
-            this.Close();
+            if (textbox1.Text.Trim().Length == 0 || textbox2.Password.Trim().Length == 0)
+            {
+                MessageBox.Show("账号或密码不能为空", "警告", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+                string sql = "select* from User_table where Id='" + textbox1.Text + "' and Password='" + textbox2.Password + "'";
+                Program p = new Program();
+                p.OpenDB();
+                List<User> U = p.Searchlogin(sql);
+                p.CloseDB();
+                if (U.Count == 0)
+                {
+                    MessageBox.Show("登录失败，用户不存在或密码错误", "错误", MessageBoxButton.OK, MessageBoxImage.Error);
+                    textbox1.Text = "";
+                    textbox2.Password = "";
+                }
+                else
+                {
+                    user = U[0];
+                    Window a1;
+                    MessageBox.Show("欢迎" + user.Name + "进入", "提示", MessageBoxButton.OK, MessageBoxImage.Information);
+                    a1 = new Window1();
+                    if (user.Role.Equals("管理员"))
+                    {
+                        if (a == 0)
+                            Dispatcher.Invoke(new Action(delegate
+                            {
+                                a++;
+                                Thread newWindowThread = new Thread(new ThreadStart(ThreadStartingPoint));
+                                newWindowThread.SetApartmentState(ApartmentState.STA);
+                                newWindowThread.IsBackground = true;
+                                newWindowThread.Start();
+                            }));
+                    }
+                    this.Hide();
+                    if (a1.ShowDialog() == true)
+                    {
+                        this.ShowDialog();
+                    }
+                    else
+                    {
+                        this.Close();
+                        Environment.Exit(0);
+                    }
+                }
+            }
         }
+        private static int a = 0;
+        public static int flag = 0;
+        public static string Card = null;
+        public static User user;
         private void ThreadStartingPoint()
         {
             Window6 tempWindow = new Window6();
             tempWindow.Show();
             System.Windows.Threading.Dispatcher.Run();
+        }
+
+        public static void GetString(string s)
+        {
+            Card = s;
+        }
+        private void test()
+        {
+            string sql = "select* from User_table where Card='" + Card + "'";
+            Program p = new Program();
+            p.OpenDB();
+            List<User> U = p.Searchlogin(sql);
+            p.CloseDB();
+            if (U.Count == 0)
+            {
+                MessageBox.Show("登录失败，用户不存在", "错误", MessageBoxButton.OK, MessageBoxImage.Error);
+                textbox1.Text = "";
+                textbox2.Password = "";
+            }
+            else
+            {
+                user = U[0];
+                Window a1;
+                MessageBox.Show("欢迎" + user.Name + "进入", "提示", MessageBoxButton.OK, MessageBoxImage.Information);
+                a1 = new Window1();
+                if (user.Role.Equals("管理员"))
+                {
+                    if (a == 0)
+                        Dispatcher.Invoke(new Action(delegate
+                        {
+                            a++;
+                            Thread newWindowThread = new Thread(new ThreadStart(ThreadStartingPoint));
+                            newWindowThread.SetApartmentState(ApartmentState.STA);
+                            newWindowThread.IsBackground = true;
+                            newWindowThread.Start();
+                        }));
+                }
+                this.Hide();
+                if (a1.ShowDialog() == true)
+                {
+                    this.ShowDialog();
+                }
+                else
+                {
+                    this.Close();
+                    Environment.Exit(0);
+                }
+            }
+        }
+
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+            flag = 1;
+            test();
         }
     }
 }

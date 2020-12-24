@@ -5,13 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:消费中心"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="登陆系统" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="169*"/>
+            <RowDefinition Height="41*"/>
+        </Grid.RowDefinitions>
         <Label Content="欢迎进入游乐园系统" HorizontalAlignment="Left" Height="58" Margin="228,68,0,0" VerticalAlignment="Top" Width="362" FontSize="36" RenderTransformOrigin="0.564,0.512"/>
         <Label Content="账号" HorizontalAlignment="Left" Margin="120,182,0,0" VerticalAlignment="Top" Height="48" Width="88" FontSize="24"/>
-        <TextBox HorizontalAlignment="Left" Height="34" Margin="193,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452"/>
-        <TextBox HorizontalAlignment="Left" Height="34" Margin="193,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452"/>
+        <TextBox Name="textbox1" HorizontalAlignment="Left" Height="34" Margin="193,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452"/>
+        <PasswordBox PasswordChar="*" Name="textbox2" HorizontalAlignment="Left" Height="34" Margin="193,230,0,0"  VerticalAlignment="Top" Width="452"/>
         <Label Content="密码" HorizontalAlignment="Left" Margin="120,228,0,0" VerticalAlignment="Top" Height="48" Width="88" FontSize="24"/>
-        <Button Content="登录" HorizontalAlignment="Left" Margin="556,300,0,0" VerticalAlignment="Top" Width="89" Height="45" Click="Button_Click" FontSize="18"/>
+        <Button Content="登录" HorizontalAlignment="Left" Margin="556,300,0,0" VerticalAlignment="Top" Width="89" Height="45" Click="Button_Click" FontSize="18" Grid.RowSpan="2"/>
+        <Button Name="Button1" Content="刷卡登录" HorizontalAlignment="Left" Margin="675,300,0,0" VerticalAlignment="Top" Width="89" Height="45"  FontSize="18" Grid.RowSpan="2" Click="Button1_Click"/>
     </Grid>
 </Window>

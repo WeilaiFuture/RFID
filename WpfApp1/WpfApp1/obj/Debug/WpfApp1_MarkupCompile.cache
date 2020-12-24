@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\RFID\RFID-3de25b63af00193c6adeee86c80738240bb8445f\WpfApp1\WpfApp1\obj\Debug\
+E:\RFID\WindowsFormsApp1\WpfApp1\WpfApp1\obj\Debug\
 WpfApp1
 none
 false
 DEBUG;TRACE
-E:\RFID\RFID-3de25b63af00193c6adeee86c80738240bb8445f\WpfApp1\WpfApp1\App.xaml
-11151548125
+E:\RFID\WindowsFormsApp1\WpfApp1\WpfApp1\App.xaml
+3-85327526
 
-61434861427
+8-1203236961
 14-1290796308
-MainWindow.xaml;
+MainWindow.xaml;Window1.xaml;Window2.xaml;
 
-True
+False
 

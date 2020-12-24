@@ -11,7 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using DataBase;
 namespace 消费中心
 {
     /// <summary>
@@ -23,37 +23,46 @@ namespace 消费中心
         {
             InitializeComponent();
         }
-
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Window2 a2 = new Window2();
+            a = new Window2();
+            flag = a.ToString();
             this.Hide();
-            a2.ShowDialog();
-            this.Show();
+            a.ShowDialog();
+            this.ShowDialog();
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Window3 a3 = new Window3();
+            a = new Window3();
+            flag = a.ToString();
             this.Hide();
-            a3.ShowDialog();
-            this.Show();
+            a.ShowDialog();
+            this.ShowDialog();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Window4 a4 = new Window4();
+            a= new Window4();
+            flag = a.ToString();
             this.Hide();
-            a4.ShowDialog();
-            this.Show();
+            a.ShowDialog();
+            this.ShowDialog();
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            Window5 a5 = new Window5();
+            a = new Window5();
+            flag = a.ToString();
             this.Hide();
-            a5.ShowDialog();
-            this.Show();
+            a.ShowDialog();
+            this.ShowDialog();
         }
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult =true;
+            this.Close();
+        }
+        public static Window a = new Window();
+        public static string flag = "";
     }
 }

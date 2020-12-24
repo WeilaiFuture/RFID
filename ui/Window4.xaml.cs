@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using DataBase;
 
 namespace 消费中心
 {
@@ -22,17 +23,39 @@ namespace 消费中心
         public Window4()
         {
             InitializeComponent();
+            initList();
         }
-
-        private void textbox1_TextChanged(object sender, TextChangedEventArgs e)
+        private string sql = "select* from Order_table";
+        private void initList()
         {
-            //string a = calendar1.SelectedDate.ToString();
-            //textbox1.Text = a;
+            Program p = new Program();
+            p.OpenDB();
+            List<Order> U = p.SearchOrder(sql);
+            p.CloseDB();
+            listView.ItemsSource = U;
+
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Find(object sender, RoutedEventArgs e)
         {
-            textbox1.Text = date1.SelectedDate.ToString();
+            if (Text2.Text == string.Empty)
+            {
+                MessageBoxResult result = MessageBox.Show("账号栏无账号是否查询所有用户", "提示", MessageBoxButton.OKCancel, MessageBoxImage.Question);
+                if (result == MessageBoxResult.OK)
+                {
+                    sql = "select* from Order_table";
+                    initList();
+                }
+            }
+            else
+            {
+                List_clear();
+                sql = "select* from Order_table where Id='" + Text2.Text + "'";
+                initList();
+            }
+        }
+        private void List_clear()
+        {
+            listView.ItemsSource = null;
         }
     }
 }

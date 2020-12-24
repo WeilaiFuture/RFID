@@ -5,16 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:消费中心"
         mc:Ignorable="d"
-        Title="Window4" Height="450" Width="800">
-    <Grid Margin="0,0,-0.4,1">
-        <Label Content="预约时间" HorizontalAlignment="Left" Margin="89,64,0,0" VerticalAlignment="Top" Width="124" FontSize="28"/>
-        <Label Content="预约中心" HorizontalAlignment="Left" Margin="318,10,0,0" VerticalAlignment="Top" Width="276" FontSize="36"/>
-        <Label Content="姓名" HorizontalAlignment="Left" Margin="117,250,0,0" VerticalAlignment="Top" Width="124" FontSize="28"/>
-        <TextBox Name="textbox1" HorizontalAlignment="Left" Height="32" Margin="238,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="493"  SpellCheck.IsEnabled="True" TextChanged="textbox1_TextChanged"/>
-        <Label Content="身份证号" HorizontalAlignment="Left" Margin="89,306,0,0" VerticalAlignment="Top" Width="124" FontSize="28"/>
-        <TextBox HorizontalAlignment="Left" Height="32" Margin="238,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="493"  SpellCheck.IsEnabled="True"/>
-        <DatePicker Name="date1" HorizontalAlignment="Left" Margin="238,71,0,0" VerticalAlignment="Top" Height="32" Width="493"/>
-        <Button Content="确认" HorizontalAlignment="Left" Margin="656,367,0,0" VerticalAlignment="Top" Width="75" Height="42" FontSize="22" Click="Button_Click"/>
-
-    </Grid>
+        Title="预约模块" Height="450" Width="800">
+    <DockPanel>
+        <Grid DockPanel.Dock="Top" Background="White" Margin="0,0,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Button Content="用户查找" Grid.Column="3" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="80" Height="25" BorderThickness="0" Background="White" Click="Find"/>
+            <Label Content="请输入账号：" Grid.Column="7"></Label>
+            <TextBox Name="Text2" Grid.Column="8"  VerticalAlignment="Center" Width="200"  Height="25"/>
+        </Grid>
+        <Grid Margin="0,0,-0.4,1">
+            <ListView Name="listView" AllowDrop="True" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Visible">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="   预约编号   " DisplayMemberBinding="{Binding IdOfOrder}" Width="150"/>
+                        <GridViewColumn Header="   卡号   " DisplayMemberBinding="{Binding Id}" Width="150"/>
+                        <GridViewColumn Header="        时间      "  DisplayMemberBinding="{Binding OrderDate}" Width="200"/>
+                        <GridViewColumn Header="        预约时间      "  DisplayMemberBinding="{Binding Date}" Width="200"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+    </DockPanel>
 </Window>
