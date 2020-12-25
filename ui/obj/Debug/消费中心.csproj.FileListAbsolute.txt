@@ -130,3 +130,10 @@ E:\RFID\WindowsFormsApp1\ui\obj\Debug\Window7.g.cs
 E:\RFID\WindowsFormsApp1\ui\obj\Debug\Window7.baml
 E:\RFID\WindowsFormsApp1\ui\obj\Debug\Window8.g.cs
 E:\RFID\WindowsFormsApp1\ui\obj\Debug\Window8.baml
+F:\My FILS\大三\RFID\RFID\ui\obj\Debug\Window6.g.cs
+F:\My FILS\大三\RFID\RFID\ui\obj\Debug\Window7.g.cs
+F:\My FILS\大三\RFID\RFID\ui\obj\Debug\Window8.g.cs
+F:\My FILS\大三\RFID\RFID\ui\obj\Debug\Window6.baml
+F:\My FILS\大三\RFID\RFID\ui\obj\Debug\Window7.baml
+F:\My FILS\大三\RFID\RFID\ui\obj\Debug\Window8.baml
+F:\My FILS\大三\RFID\RFID\ui\obj\Debug\消费中心_Content.g.cs

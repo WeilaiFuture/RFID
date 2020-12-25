@@ -128,5 +128,9 @@ namespace WpfApp1
             }
         }
 
+        private void combobox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

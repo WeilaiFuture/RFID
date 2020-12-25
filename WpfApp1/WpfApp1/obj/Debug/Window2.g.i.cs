@@ -162,6 +162,12 @@ namespace WpfApp1 {
             return;
             case 8:
             this.combobox1 = ((System.Windows.Controls.ComboBox)(target));
+            
+            #line 25 "..\..\Window2.xaml"
+            this.combobox1.SelectionChanged += new System.Windows.Controls.SelectionChangedEventHandler(this.combobox1_SelectionChanged);
+            
+            #line default
+            #line hidden
             return;
             case 9:
             this.combobox2 = ((System.Windows.Controls.ComboBox)(target));

@@ -152,5 +152,18 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="823a5eaf1c0d2e9ef050ab6d914e3680.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="737c172dd7f0cdfdacaa63680b4a23db.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="2f6b317555460d1c65759dc00e4ebd6e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src=http___pic.51yuansu.com_pic2_cover_00_36_23_5811c9886e2b9_610.jpg&amp;refer=http___pic.51yuansu.jfif" />
+    <Content Include="src=http___pic.51yuansu.com_pic3_cover_01_26_20_5922f64f1265a_610.jpg&amp;refer=http___pic.51yuansu.jfif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,13 +7,15 @@
         mc:Ignorable="d"
         Title="消费模块" Height="450" Width="800">
     <Grid>
-        <Label Content="消费中心" HorizontalAlignment="Left" Margin="318,52,0,0" VerticalAlignment="Top" Width="276" FontSize="36"/>
+        <Label Content="消费中心" HorizontalAlignment="Left" Margin="326,54,0,0" VerticalAlignment="Top" Width="276" FontSize="40" FontFamily="Sylfaen" FontWeight="Bold"/>
         <Label Content="消费金额" HorizontalAlignment="Left" Margin="91,182,0,0" VerticalAlignment="Top" Width="124" FontSize="28"/>
         <TextBox Name="textbox1" HorizontalAlignment="Left" Height="32" Margin="238,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="493"  SpellCheck.IsEnabled="True"/>
         <Label Content="卡号" HorizontalAlignment="Left" Margin="113,252,0,0" VerticalAlignment="Top" Width="124" FontSize="28"/>
         <TextBox Name="textbox2" HorizontalAlignment="Left" Height="32" Margin="238,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="493"  SpellCheck.IsEnabled="True"/>
-        <Button HorizontalAlignment="Left" Margin="318,344,0,0" VerticalAlignment="Top" Width="76" Height="37" FontSize="26" Content="确认" Click="Button_Click" RenderTransformOrigin="2.063,0.396"/>
-        <Button Content="记录查看" HorizontalAlignment="Left" Margin="677,10,0,0" VerticalAlignment="Top" Width="107" Height="46" Click="Button_Click_1"/>
+        <Button HorizontalAlignment="Left" Margin="644,344,0,0" VerticalAlignment="Top" Width="76" Height="37" FontSize="26" Content="确认" Click="Button_Click" RenderTransformOrigin="2.063,0.396"/>
+        <Button Content="记录查看" HorizontalAlignment="Left" Margin="677,10,0,0" VerticalAlignment="Top" Width="107" Height="46" Click="Button_Click_1" FontSize="16"/>
+        <Image HorizontalAlignment="Left" Height="68" Margin="83,48,0,0" VerticalAlignment="Top" Width="77" Source="src=http___pic.51yuansu.com_pic3_cover_01_26_20_5922f64f1265a_610.jpg&amp;refer=http___pic.51yuansu.jfif"/>
+        <Image HorizontalAlignment="Left" Height="68" Margin="162,50,0,0" VerticalAlignment="Top" Width="65" Source="src=http___pic.51yuansu.com_pic2_cover_00_36_23_5811c9886e2b9_610.jpg&amp;refer=http___pic.51yuansu.jfif"/>
 
     </Grid>
 </Window>
