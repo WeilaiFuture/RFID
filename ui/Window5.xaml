@@ -14,8 +14,8 @@
         <TextBox Name="textbox2" HorizontalAlignment="Left" Height="32" Margin="238,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="493"  SpellCheck.IsEnabled="True"/>
         <Button HorizontalAlignment="Left" Margin="644,344,0,0" VerticalAlignment="Top" Width="76" Height="37" FontSize="26" Content="确认" Click="Button_Click" RenderTransformOrigin="2.063,0.396"/>
         <Button Content="记录查看" HorizontalAlignment="Left" Margin="677,10,0,0" VerticalAlignment="Top" Width="107" Height="46" Click="Button_Click_1" FontSize="16"/>
-        <Image HorizontalAlignment="Left" Height="68" Margin="83,48,0,0" VerticalAlignment="Top" Width="77" Source="src=http___pic.51yuansu.com_pic3_cover_01_26_20_5922f64f1265a_610.jpg&amp;refer=http___pic.51yuansu.jfif"/>
-        <Image HorizontalAlignment="Left" Height="68" Margin="162,50,0,0" VerticalAlignment="Top" Width="65" Source="src=http___pic.51yuansu.com_pic2_cover_00_36_23_5811c9886e2b9_610.jpg&amp;refer=http___pic.51yuansu.jfif"/>
+        <Image HorizontalAlignment="Left" Height="60" Margin="81,56,0,0" VerticalAlignment="Top" Width="60" Source="src=http___pic.51yuansu.com_pic2_cover_00_36_23_5811c9886e2b9_610.jpg&amp;refer=http___pic.51yuansu.jfif"/>
+        <Image HorizontalAlignment="Left" Height="62" Margin="153,54,0,0" VerticalAlignment="Top" Width="62" Source="src=http___pic.51yuansu.com_pic3_cover_01_26_20_5922f64f1265a_610.jpg&amp;refer=http___pic.51yuansu.jfif"/>
 
     </Grid>
 </Window>
